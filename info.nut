@@ -3,6 +3,7 @@ class gelignAIte extends AIInfo
    function GetAuthor()      { return "Marcel Glacki"; }
    function GetName()        { return "gelignAIte"; }
    function GetVersion()     { return 1; }
+   function GetAPIVersion()  { return "1.0"; }
    function GetDate()        { return "2010-10-20"; }
    function CreateInstance() { return "gelignAIte"; }
    function GetShortName()   { return "GELI"; }
