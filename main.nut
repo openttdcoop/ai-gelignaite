@@ -656,6 +656,8 @@ function gelignAIte::ManageEngines( ingame = true )
   // Choose adequate road vehicle for passenger service
   ea.Valuate( EngineCargoValuator, "PASS" );
   ea.KeepValue( 1 );
+  ea.Valuate( AIEngine.GetRoadType ); // Exclude trams
+  ea.KeepValue( 0 );
 
   // Set vehicle type to best engine available
   if( ea.Count() > 0 )
