@@ -8,8 +8,7 @@ class gelignAIte extends AIInfo
    function GetShortName()   { return "GELI"; }
    function GetURL()         { return "http://dev.openttdcoop.org/projects/ai-gelignaite"; }
    function GetDescription() {
-     return "Non-competitive AI that builds one passenger-service (2 buses) after the AI started and a mail-service (4 trucks) when the biggest 
-has >= 9k inhabitants and loan is <= 20 %.";
+     return "Non-competitive AI that builds one passenger-service (2 buses) after the AI started and a mail-service (4 trucks) when the biggest has >= 9k inhabitants and loan is <= 20 %.";
    }
 
    function GetSettings() 
