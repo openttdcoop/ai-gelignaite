@@ -21,7 +21,7 @@ class gelignAIte extends AIController
   // General
   last_station_update         = 0;
   max_station_update          = false;
-  group_id                    = 0;                         // Updating engines, etc.
+  group_id                    = null;                         // Updating engines, etc.
   self                        = AICompany.COMPANY_INVALID;
 
   constructor()
@@ -44,7 +44,7 @@ class gelignAIte extends AIController
 
     this.last_station_update         = AIDate.GetYear( AIDate.GetCurrentDate() );
     this.max_station_update          = false;
-    this.group_id                    = false;
+    this.group_id                    = null;
     this.self                        = AICompany.COMPANY_SELF;
   } 
 }
@@ -228,7 +228,7 @@ function gelignAIte::InitCompany()
   }
 
   // Create group for vehicle servicing (updating engines, a.s.o.)
-  if( !this.group_id && this.group_id != 0 )
+  if( this.group_id == null )
   {
     this.group_id = AIGroup.CreateGroup( AIVehicle.VT_ROAD );
   }
